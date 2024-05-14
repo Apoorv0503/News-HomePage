@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+
+
+:root {
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+/* basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.main{
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    /* flex-direction: column;  */
+    margin: 4rem 10rem;
+}
+
+/* header section */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  padding-right: 0;
+}
+
+.header ul {
+  list-style: none;
+}
+
+.header li {
+color: var(--Dark-grayish-blue);
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+nav .nav-itmes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+
+/* menu icon is not visible on big screen*/
+.header .menu-button button {
+  display: none;
+}
+
+/* closing button */
+.header nav #menu-close {
+  display: none;
+}
+
+
+/* body content */
+.body-content{
+    display: flex;
+    flex-direction: column;   
+}
+
+.first-section{
+    display: flex;
+}
+
+/* hero section on left side */
+.first-section .left-block{
+    display: flex;
+    width: 66%;
+    flex-direction: column;   
+}
+
+.left-block .hero-img{
+        width: 100%; /* Take the full width of the container */
+        padding: 2rem ;
+        padding-top: 0rem;
+        position: relative;
+}
+
+.hero-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.left-block .text-part{
+    padding-left: 2rem;
+    padding-right: 1rem;
+    display: flex;
+    line-height: normal;
+}
+
+.text-part .main-text{
+    width: 50%;
+    font-size: 350%;
+    font-weight: 900;
+    line-height: .9;
+
+}
+
+.text-part .sub-text-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5;
+    width: 50%;
+    padding-left:1rem;
+    padding-right: 1rem;
+}
+
+.sub-text-part p{
+  color: var(--Dark-grayish-blue);
+  font-style: bold;
+}
+
+.sub-text-part button{
+    padding: 0.5rem 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: hsl(5, 85%, 63%);
+    color: #fff;
+    border-style: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.sub-text-part button:hover{
+  background-color: hsl(240, 100%, 5%);
+}
+
+/* news block on right side */
+
+.first-section .right-block{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    color: white;
+    background-color:var(--Very-dark-blue);
+    margin-bottom: 2rem;
+}
+
+.right-block .news-heading{
+  color: rgb(213, 213, 16);
+}
+
+
+
+.right-block .news1{
+    padding: 2rem 0rem;
+    border-bottom: 1px solid white;
+}
+
+.news1 h3{
+  margin-bottom: .5rem;
+}
+
+.news1 p{
+  font-weight:200;
+  font-size: medium;
+  line-height: 1.5;
+  color: var(--Off-white);
+}
+
+
+.right-block .news2{
+    padding: 2rem 0rem;
+    border-bottom: 1px solid white;
+}
+
+.news2 h3{
+  margin-bottom: .5rem;
+}
+
+.news2 p{
+  font-weight:200;
+  font-size: medium;
+  line-height: 1.5;
+  color: var(--Off-white);
+}
+
+.right-block .news3{
+    padding: 2rem 0rem;
+}
+
+.news3 h3{
+  margin-bottom: .5rem;
+}
+
+.news3 p{
+  font-weight:200;
+  font-size: medium;
+  line-height: 1.5;
+  color: var(--Off-white);
+}
+
+
+
+/* bottom second-section row with hot news */
+.second-section{
+  display: flex;
+  padding: 2rem;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.second-section .card{
+  display: flex;
+  width: 33%;
+ 
+}
+
+.card img{
+  width: 6rem;
+  
+}
+
+.card .card-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+
+.card-text h1{
+  color: var(--Grayish-blue);
+}
+
+.card-text h3{
+  font-weight: 900;
+}
+
+.card-text p{
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-right: 2rem;
+  color: var(--Dark-grayish-blue);
+  font-style: bold;
+}
+
+/* footer */
+.attribution {
+  margin-bottom: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+/* mobile-tab view */
+@media only screen and (max-width: 1000px){
+
+  .main{
+    margin: 1rem;
+  }
+
+  .header{
+    padding-right: 3rem;
+  }
+
+/*---------logic for the hamburger menu open and collapse------- */
+/* big screen nav bar is not visible on mobile screen */
+nav .nav-itmes{
+  display: none;
+}
+
+  /* menu icon for collapsing side bar on mobile screen */
+.header .menu-button button {
+  display: block;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* when we click on menu button, an "open" class gets added to the nav , similar when we click on the close button the "open" class gets removed from nav*/
+
+/* menu icon is not visible after addition of "open" class*/
+.header nav.open .menu-button button {
+  display: none;
+}
+
+/* closing button visible after addition of "open" class*/
+.header nav.open #menu-close {
+  display: block;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 3rem;
+  top: 4rem;
+  z-index: 99999;
+  cursor: pointer;
+}
+
+/* new styling for the nav after addition of "open" class */
+  .header nav.open {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 75vw;
+    background-color: white;
+    padding: 1.25rem;
+    opacity: 1;
+    z-index: 99999999999;
+  }
+
+/* after addition of "open" class, below is the stying of ul of nav */
+  .header nav.open .nav-itmes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10rem;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+
+  /* particular styling of the li itmes after addition of "open" class to nav */
+  .header nav.open .nav-itmes li{
+    padding: 1rem 1rem;
+  } 
+
+/* side bar logic finished */
+
+
+    .first-section{
+      flex-direction: column;
+    }
+
+    .first-section .left-block{
+      width: 100%;
+    }
+
+    .left-block .hero-img{
+      /* margin: 0rem; */
+    }
+
+    .left-block .text-part{
+      flex-direction: column;
+    }
+
+    .text-part .main-text{
+      width: 100%;
+      font-size: 350%;
+      margin-bottom: 1.5rem;
+    }
+
+    .text-part .sub-text-part{
+      width: 100%;
+      padding-left:0rem;
+    }
+
+    .sub-text-part p{
+      margin-bottom: 1.5rem;
+    }
+
+    .first-section .right-block {
+       width: 85%; 
+      margin: 2rem;
+      margin-bottom: 0rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+
+      
+    }
+
+    .right-block h3{
+      margin-bottom: 1rem;
+    }
+
+    .main .second-section{
+      flex-direction: column;
+    }
+
+    .second-section .card{
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    .card p{
+      margin-right: 0;
+    }
+
+
+
+}

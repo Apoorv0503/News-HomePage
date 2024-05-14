@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>News homepage</title>
+  </head>
+  <body>
+    <main class="main">
+      <!-- header section -->
+      <header class="header">
+        <div>
+          <img src="./assets/images/logo.svg" />
+        </div>
+        <nav>
+
+           <!-- hamburger menu -->
+        <div class="menu-button">
+          <button id="menu-button">
+            <img src="./assets/images/icon-menu.svg" alt="" />
+          </button>
+        </div>
+
+        <!-- menu closing button -->
+          <button id="menu-close">
+            <img src="./assets/images/icon-menu-close.svg" alt="" />
+          </button>
+
+          <!-- nav bar for desktop screen -->
+          <ul class="nav-itmes">
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </nav>
+
+       
+      </header>
+
+      <!-- main content -->
+      <div class="body-content">
+        <div class="first-section">
+          <!-- hero secton on left part -->
+          <div class="left-block">
+            <div class="hero-img">
+              <picture>
+                <!-- Source of Desktop bg View -->
+              <source media="(min-width: 1100px)" srcset="./assets/images/image-web-3-desktop.jpg">
+              <!-- default Source of other bg Views ( eg mobile/tab which is <=1024px) -->
+              <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+            </picture>
+            </div>
+            <div class="text-part">
+              <h1 class="main-text">The Bright Future of Web 3.0?</h1>
+              <div class="sub-text-part">
+                <p>
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <div class="read-more-btn">
+                  <button>Read more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- new news block on right part-->
+          <div class="right-block">
+            <h1 class="news-heading">New</h1>
+            <!-- news 1 -->
+            <div class="news1">
+              <h3>Hydrogen VS Electric Cars</h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <!-- news 2 -->
+            <div class="news2">
+              <h3>The Downsides of AI Artistry</h3>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <!-- news 3 -->
+            <div class="news3">
+              <h3>Is VC Funding Drying Up?</h3>
+              <p>
+                Private funding by VC firms is down 50% YOY.We take a look at
+                what that means.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="second-section">
+          <!-- news card  1 -->
+          <div class="card">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="news-card-1"/>
+            <div class="card-text">
+              <h1>01</h1>
+              <h3>Reviving Retro PCs</h3>
+              <p>What happens when old PCs are given modern
+                upgrades?</p>
+            </div>
+          </div>
+           <!-- news card  2 -->
+          <div class="card">
+            <img src="./assets/images/image-top-laptops.jpg" alt="news-card-1"/>
+            <div class="card-text">
+              <h1>02</h1>
+              <h3>Top 10 Laptops of 2022</h3>
+              <p>Our best picks for various needs and
+                budgets.</p>
+            </div>
+          </div>
+           <!-- news card  3 -->
+          <div class="card">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="news-card-1"/>
+            <div class="card-text">
+              <h1>03</h1>
+              <h3>The Growth of Gaming</h3>
+              <p>How the pandemic has sparked fresh
+                opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.crio.do/" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Apoorv0503">Apoorva</a>.
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+  </body>
+</html>

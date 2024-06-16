@@ -56,4 +56,4 @@ Once you've added your information to the template, delete this file and rename 
 
 ## Test Result
 
-![test_result](./design/desktop-preview.jpg)
+![test_result](./assets/images/test_result.png)
